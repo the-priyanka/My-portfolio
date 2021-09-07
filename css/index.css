@@ -54,9 +54,12 @@
 }
 .navbar .menu li a:hover {
   color: crimson;
+  font-size: 20px;
 }
 .navbar.sticky .menu li a:hover {
   color: white;
+  text-decoration: underline;
+  font-size: 20px;
 }
 
 /* menu btn styling */
@@ -66,7 +69,7 @@
   cursor: pointer;
   display: none;
 }
-.scroll-up-btn{
+.scroll-up-btn {
   position: fixed;
   height: 45px;
   width: 42px;
@@ -81,7 +84,6 @@
   border-radius: 6px;
   cursor: pointer;
 }
-
 
 /* home section styling */
 .home {
@@ -458,31 +460,31 @@ section .title::after {
 .contact .contact-content .info .sub-title {
   color: #333;
 }
-.contact .right form .fields{
+.contact .right form .fields {
   display: flex;
 }
 .contact .right form .field,
-.contact .right form .fields .field{
+.contact .right form .fields .field {
   height: 45px;
   width: 100%;
   margin-bottom: 15px;
 }
-.contact .right form .textarea{
+.contact .right form .textarea {
   height: 80px;
   width: 100%;
 }
-.contact .right form .name{
+.contact .right form .name {
   margin-right: 10px;
 }
-.contact .right form .email{
+.contact .right form .email {
   margin: right;
 }
-.contact .right form .field input{
+.contact .right form .field input {
   height: 100%;
   width: 100%;
 }
 .contact .right form .field input,
-.contact .right form .textarea textarea{
+.contact .right form .textarea textarea {
   height: 100%;
   width: 100%;
   border: 1px solid lightgray;
@@ -492,15 +494,15 @@ section .title::after {
   font-size: 17px;
   font-family: "Poppins", sans-serif;
 }
-.contact .right form .textarea textarea{
+.contact .right form .textarea textarea {
   padding-top: 10px;
   resize: none;
 }
-.contact .right form .button{
+.contact .right form .button {
   height: 47px;
   width: 170px;
 }
-.contact .right form .button button{
+.contact .right form .button button {
   width: 100%;
   height: 100%;
   border: 2px solid crimson;
@@ -512,40 +514,25 @@ section .title::after {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.contact .right form .button button:hover{
+.contact .right form .button button:hover {
   background: none;
   color: crimson;
 }
 
 /* footer section styling */
-footer{
+footer {
   background: #111;
   padding: 20px 24px;
   color: white;
   text-align: center;
 }
-footer span a{
+footer span a {
   color: crimson;
   text-decoration: none;
 }
-footer span a:hover{
+footer span a:hover {
   text-decoration: underline;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* responsive media query start */
 @media (max-width: 1147px) {
