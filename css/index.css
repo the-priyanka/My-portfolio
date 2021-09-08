@@ -88,7 +88,7 @@
 /* home section styling */
 .home {
   display: flex;
-  background: url("/img/image4.JPG") no-repeat;
+  background: url("../img/image4.JPG") no-repeat;
   /* background-position: top -200px right 0px; */
   background-size: cover;
   height: 100vh;
