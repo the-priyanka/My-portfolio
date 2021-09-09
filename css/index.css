@@ -6,6 +6,10 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
+
+section {
+  overflow: hidden;
+}
 .max-width {
   max-width: 1300px;
   padding: 0 60px;
@@ -14,7 +18,7 @@
 /* navbar styling */
 .navbar {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   padding: 30px 0;
   z-index: 10;
   font-family: "Ubuntu", sans-serif;
