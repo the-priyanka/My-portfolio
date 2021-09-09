@@ -538,7 +538,7 @@ footer span a:hover {
   text-decoration: underline;
 }
 
-/* responsive media query start */
+/* **************responsive media query start****************** */
 @media (max-width: 1147px) {
   .about .about-content .left img {
     height: 350px;
@@ -644,6 +644,9 @@ footer span a:hover {
 @media (max-width: 500px) {
   .home .home-content .text-2 {
     font-size: 44px;
+  }
+  .home {
+    background-position: top;
   }
   .home .home-content .text-3 {
     font-size: 20px;

@@ -34,7 +34,7 @@ $(document).ready(function () {
     backSpeed: 60,
     loop: true,
   });
-   typed = new Typed(".typing-2", {
+  typed = new Typed(".typing-2", {
     strings: ["Front End Developer"],
     typeSpeed: 100,
     backSpeed: 60,
@@ -43,13 +43,24 @@ $(document).ready(function () {
 });
 // toggle menu/navbar script
 let menuBtn = document.querySelector(".menu-btn");
-menuBtn.addEventListener("click", function () {
+
+menuBtn.addEventListener("click", toggleMenu)
+function toggleMenu() {
   console.log("the priyanka");
   let navbarMenu = document.querySelector(".navbar .menu");
   let menuBtnI = document.querySelector(".menu-btn i");
   navbarMenu.classList.toggle("active");
   menuBtnI.classList.toggle("active");
-});
+};
+
+let menuLinks = document.querySelectorAll(".menuLink")
+menuLinks.forEach(
+  function (menuLink) {
+    menuLink.addEventListener("click", toggleMenu)
+  }
+)
+
+
 
 // scroll up btn js
 let scrollUpBtn = document.querySelector(".scroll-up-btn");
