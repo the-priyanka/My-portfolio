@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+/* *********************UTILITY CLASSES START NOW********************** */
+:root {
+  --primary-color: crimson;
+}
+/* *********************UTILITY CLASSES END ********************** */
+
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +32,7 @@ section {
 }
 .navbar.sticky {
   padding: 15px 0;
-  background-color: crimson;
+  background-color: var(--primary-color);
 }
 .navbar .max-width {
   display: flex;
@@ -39,7 +45,8 @@ section {
   font-weight: 600;
 }
 .navbar .logo a span {
-  color: crimson;
+  color: var(--primary-color);
+  /* color: var(--primary-color); */
   transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span {
@@ -57,7 +64,7 @@ section {
   transition: color 0.3s ease;
 }
 .navbar .menu li a:hover {
-  color: crimson;
+  color: var(--primary-color);
   font-size: 20px;
 }
 .navbar.sticky .menu li a:hover {
@@ -77,7 +84,7 @@ section {
   position: fixed;
   height: 45px;
   width: 42px;
-  background-color: crimson;
+  background-color: var(--primary-color);
   right: 30px;
   bottom: 10px;
   text-align: center;
@@ -130,22 +137,22 @@ section {
   color: white;
 }
 .home .home-content .text-3 span {
-  color: crimson;
+  color: var(--primary-color);
   font-weight: bold;
 }
 .home .home-content a {
   display: inline-block;
-  background-color: crimson;
+  background-color: var(--primary-color);
   color: white;
   font-size: 25px;
   padding: 12px 36px;
   margin-top: 20px;
   border-radius: 8px;
-  border: 2px solid crimson;
+  border: 2px solid var(--primary-color);
   transition: all 0.3s ease;
 }
 .home .home-content a:hover {
-  color: crimson;
+  color: var(--primary-color);
   background: none;
 }
 
@@ -195,7 +202,7 @@ section .title::after {
   bottom: -12px;
   left: 50%;
   font-size: 20px;
-  color: crimson;
+  color: var(--primary-color);
   padding: 5px;
   background: #fff;
   transform: translateX(-50%);
@@ -223,25 +230,25 @@ section .title::after {
   margin-bottom: 10px;
 }
 .about .about-content .right .text span {
-  color: crimson;
+  color: var(--primary-color);
 }
 .about .about-content .right p {
   text-align: justify;
 }
 .about .about-content .right a {
   display: inline-block;
-  background-color: crimson;
+  background-color: var(--primary-color);
   color: white;
   font-size: 20px;
   padding: 10px 30px;
   margin-top: 20px;
   border-radius: 8px;
-  border: 2px solid crimson;
+  border: 2px solid var(--primary-color);
   transition: all 0.3s ease;
 }
 .about .about-content .right a:hover {
   background: none;
-  color: crimson;
+  color: var(--primary-color);
 }
 
 /* services section styling */
@@ -270,7 +277,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 .services .serv-content .card:hover {
-  background: crimson;
+  background: var(--primary-color);
 }
 
 .services .serv-content .card .box {
@@ -282,7 +289,7 @@ section .title::after {
 
 .services .serv-content .card i {
   font-size: 50px;
-  color: crimson;
+  color: var(--primary-color);
   transition: all 0.3s ease;
 }
 .services .serv-content .card:hover i {
@@ -311,18 +318,18 @@ section .title::after {
 }
 .skills .skills-content .left a {
   display: inline-block;
-  background-color: crimson;
+  background-color: var(--primary-color);
   color: white;
   font-size: 18px;
   padding: 8px 16px;
   margin-top: 20px;
   border-radius: 8px;
-  border: 2px solid crimson;
+  border: 2px solid var(--primary-color);
   transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover {
   background: none;
-  color: crimson;
+  color: var(--primary-color);
 }
 
 .skills .skills-content .right .bars {
@@ -351,7 +358,7 @@ section .title::after {
   width: 80%;
   left: 0;
   top: 0;
-  background: crimson;
+  background: var(--primary-color);
 }
 .skills .skills-content .right .html::before {
   width: 90%;
@@ -375,7 +382,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 .teams .carousel .card:hover {
-  background: crimson;
+  background: var(--primary-color);
 }
 .teams .carousel .card .box {
   display: flex;
@@ -399,7 +406,7 @@ section .title::after {
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid crimson;
+  border: 5px solid var(--primary-color);
   transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img {
@@ -412,7 +419,7 @@ section .title::after {
 .owl-dot {
   height: 16px;
   width: 16px;
-  border: 2px solid crimson !important;
+  border: 2px solid var(--primary-color) !important;
   outline: none !important;
   border-radius: 50%;
   margin: 0 4px;
@@ -424,7 +431,7 @@ section .title::after {
 }
 .owl-dot.active,
 .owl-dot:hover {
-  background-color: crimson !important;
+  background-color: var(--primary-color) !important;
 }
 
 /* contact section styling */
@@ -456,7 +463,7 @@ section .title::after {
 }
 .contact .contact-content .row i {
   font-size: 25px;
-  color: crimson;
+  color: var(--primary-color);
 }
 .contact .contact-content .info .head {
   font-weight: 500;
@@ -509,8 +516,8 @@ section .title::after {
 .contact .right form .button button {
   width: 100%;
   height: 100%;
-  border: 2px solid crimson;
-  background-color: crimson;
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
   color: white;
   font-size: 20px;
   font-weight: 500;
@@ -520,7 +527,7 @@ section .title::after {
 }
 .contact .right form .button button:hover {
   background: none;
-  color: crimson;
+  color: var(--primary-color);
 }
 
 /* footer section styling */
@@ -531,7 +538,7 @@ footer {
   text-align: center;
 }
 footer span a {
-  color: crimson;
+  color: var(--primary-color);
   text-decoration: none;
 }
 footer span a:hover {
