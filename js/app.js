@@ -1,6 +1,8 @@
 window.addEventListener("scroll", function () {
   let navbar = document.querySelector(".navbar");
+  let theme_switch_wrapper = document.querySelector(".theme-switch-wrapper")
   navbar.classList.toggle("sticky", window.scrollY > 0);
+  theme_switch_wrapper.classList.toggle("theme-switch-wrapper-sticky", window.scrollY > 0);
 });
 
 // owl carousel script
@@ -80,3 +82,19 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// dark and light theme 
+const toggleSwitch = document.querySelector("input[type='checkbox']")
+
+// Switch theme dynamically
+function switchTheme(event) {
+  if (event.target.checked) {
+    document.documentElement.setAttribute("data-theme", "dark")
+  }
+  else {
+    document.documentElement.setAttribute("data-theme", "light")
+  }
+}
+
+// event listener 
+toggleSwitch.addEventListener('change', switchTheme)
