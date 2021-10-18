@@ -238,7 +238,6 @@ input:checked + .slider::before {
   margin-top: 20px;
   border-radius: 8px;
   border: 2px solid var(--primary-color);
-  transition: all 0.3s ease;
 }
 .home .home-content a:hover {
   color: var(--primary-color);
@@ -333,7 +332,6 @@ section .title::after {
   margin-top: 20px;
   border-radius: 8px;
   border: 2px solid var(--primary-color);
-  transition: all 0.3s ease;
 }
 .about .about-content .right a:hover {
   background: none;
@@ -363,7 +361,7 @@ section .title::after {
   border-radius: 8px;
   padding: 20px 25px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
 }
 .services .serv-content .card:hover {
   background: var(--primary-color);
@@ -379,7 +377,7 @@ section .title::after {
 .services .serv-content .card i {
   font-size: 50px;
   color: var(--primary-color);
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
 }
 .services .serv-content .card:hover i {
   color: var(--secondary-color);
