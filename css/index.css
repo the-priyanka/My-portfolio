@@ -5,8 +5,8 @@
   --secondary-color: white;
 }
 [data-theme="dark"] {
-  --primary-color: #e2a6b2;
-  --secondary-color: #000000;
+  --primary-color: #d76e81;
+  --secondary-color: white;
 }
 /* *********************UTILITY CLASSES END ********************** */
 
@@ -73,21 +73,22 @@ section {
   right: 0;
   top: 0;
   transition: 0.4s;
+  border: 2px solid var(--secondary-color);
 }
 
 .slider::before {
-  background: #fff;
-  bottom: 4px;
+  background: var(--secondary-color);
+  bottom: 2px;
   content: "";
   height: 26px;
-  left: 4px;
+  left: 1px;
   position: absolute;
   transition: 0.4s;
   width: 26px;
 }
 
 input:checked + .slider {
-  background: var(--secondary-color);
+  background: var(--primary-color);
 }
 
 input:checked + .slider::before {
@@ -119,6 +120,7 @@ input:checked + .slider::before {
 .navbar.sticky {
   padding: 15px 0;
   background-color: var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
 }
 .navbar .max-width {
   display: flex;
@@ -387,7 +389,13 @@ section .title::after {
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
+.services .serv-content .card:hover .text {
+  color: var(--secondary-color);
+}
 
+.services .serv-content .card:hover p {
+  color: var(--secondary-color);
+}
 /* skills section styling */
 .skills .title::after {
   content: "what i know";
@@ -626,7 +634,7 @@ footer {
   text-align: center;
 }
 footer span a {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-decoration: none;
 }
 footer span a:hover {
