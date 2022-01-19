@@ -18,6 +18,14 @@
   scroll-behavior: smooth;
 }
 
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
 section {
   overflow: hidden;
 }
@@ -202,7 +210,7 @@ input:checked + .slider::before {
   background: #00000054;
   height: 100vh;
   min-height: 500px;
-  width: 98.7vw;
+  width: 99.7vw;
 }
 .home .max-width {
   /* margin: auto 400px auto 0; */
