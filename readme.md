@@ -10,10 +10,10 @@ _This is my navbar include scroll function:_
 
 ## 2: **Button**
 
-_This is my navbar:_
+_This is my button:_
 ![Alt Text](mdImg/btn.png)
 
-_This is my navbar include scroll function:_
+_hover:_
 ![Alt Text](mdImg/hoverBtn.png)
 
 ## 3: **ScrollUP**
