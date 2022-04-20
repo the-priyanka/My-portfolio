@@ -40,13 +40,10 @@ section {
   display: flex;
   align-items: center;
   z-index: 100;
-  position: fixed;
+  /* position: fixed;
   right: 20px;
-  top: 33px;
+  top: 33px; */
   transition: all 0.3s ease;
-}
-.theme-switch-wrapper-sticky {
-  margin-top: -13px;
 }
 
 .theme-switch-wrapper span {
@@ -119,14 +116,15 @@ input:checked + .slider::before {
 /* navbar styling */
 .navbar {
   position: fixed;
+  height: 70px;
   width: 100vw;
-  padding: 30px 0;
+  padding: 12px 0;
   z-index: 10;
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
 }
 .navbar.sticky {
-  padding: 15px 0;
+  margin: 0;
   background-color: var(--primary-color);
   border-bottom: 2px solid var(--secondary-color);
 }
@@ -170,6 +168,10 @@ input:checked + .slider::before {
   color: var(--secondary-color);
   text-decoration: underline;
   font-size: 20px;
+}
+.right-navbar {
+  display: flex;
+  /* padding: 32px 0; */
 }
 
 /* menu btn styling */
@@ -529,6 +531,9 @@ section .title::after {
   margin: 0 4px;
   transition: all 0.3s ease;
 }
+.active {
+  padding: 0;
+}
 .owl-dot.active {
   width: 40px;
   border-radius: 14px;
@@ -734,7 +739,7 @@ footer span a:hover {
 }
 @media (max-width: 860px) {
   .theme-switch-wrapper {
-    margin-right: 111px;
+    margin-right: 50px;
   }
 }
 @media (max-width: 690px) {
@@ -757,7 +762,7 @@ footer span a:hover {
     width: 100%;
   }
   .theme-switch-wrapper {
-    margin-right: 62px;
+    margin-right: 15px;
   }
 }
 @media (max-width: 500px) {
